@@ -1,0 +1,103 @@
+//ilosc kolumn w colzie
+$col-count: 12;
+//Kontener ze stałą szerokością w zależności od urządzenia
+@media (max-width: 768px) {
+  .container {
+    width: 98%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+//Kontener ze zmienną szerokością
+.container-fluid {
+  max-width: 1500px;
+  margin: auto;
+}
+.container {
+  margin: auto;
+}
+.row {
+  min-height: 1px;
+  margin: auto;
+
+  &:before, &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @for $i from 1 through $col-count {
+    @media (max-width: 768px) {
+      .col-xs-#{$i} {
+        box-sizing: border-box;
+        float: left;
+        display: block;
+        // jedna kolumna to 100 / ilosc kolumn
+        width: 100% / $col-count * $i;
+        min-height: 1px;
+      }
+      .col-xs-offset-#{$i} {
+        margin-left: 100% / $col-count * $i;
+      }
+    }
+  }
+  @for $i from 1 through $col-count {
+    @media (min-width: 768px) {
+      .col-sm-#{$i} {
+        box-sizing: border-box;
+        float: left;
+        display: block;
+        // jedna kolumna to 100 / ilosc kolumn
+        width: 100% / $col-count * $i;
+        min-height: 1px;
+      }
+      .col-sm-offset-#{$i} {
+        margin-left: 100% / $col-count * $i;
+      }
+    }
+  }
+  @for $i from 1 through $col-count {
+    @media (min-width: 992px) {
+      .col-md-#{$i} {
+        box-sizing: border-box;
+        float: left;
+        display: block;
+        // jedna kolumna to 100 / ilosc kolumn
+        width: 100% / $col-count * $i;
+        min-height: 1px;
+      }
+      .col-md-offset-#{$i} {
+        margin-left: 100% / $col-count * $i;
+      }
+    }
+  }
+  @for $i from 1 through $col-count {
+    @media (min-width: 1200px) {
+      .col-lg-#{$i} {
+        box-sizing: border-box;
+        float: left;
+        display: block;
+        // jedna kolumna to 100 / ilosc kolumn
+        width: 100% / $col-count * $i;
+        min-height: 1px;
+      }
+      .col-lg-offset-#{$i} {
+        margin-left: 100% / $col-count * $i;
+      }
+    }
+  }
+}
