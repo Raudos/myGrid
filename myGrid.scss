@@ -31,14 +31,14 @@ $col-count: 12;
   margin: auto;
 }
 .table {
-    display: table;
-    table-layout: fixed;
+    display: table !important;
+    table-layout: fixed !important;
     height:100%;
 }
 .cell {
     vertical-align: middle;
-    float: none;
-    display: table-cell;
+    float: none !important;
+    display: table-cell !important;
     height:100%;
 }
 @media (max-width: 767px) {
