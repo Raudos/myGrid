@@ -17,6 +17,17 @@
 .container {
   margin: auto; }
 
+.table {
+  display: table;
+  table-layout: fixed;
+  height: 100%; }
+
+.cell {
+  vertical-align: middle;
+  float: none;
+  display: table-cell;
+  height: 100%; }
+
 .row {
   min-height: 1px;
   margin: auto; }
