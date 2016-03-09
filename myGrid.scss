@@ -71,7 +71,7 @@ $col-count: 12;
     clear: both;
   }
 
-  @for $i from 1 through $col-count {
+  @for $i from 0 through $col-count {
     @media (max-width: 768px) {
       .col-xs-#{$i} {
         box-sizing: border-box;
@@ -90,7 +90,7 @@ $col-count: 12;
       }
     }
   }
-  @for $i from 1 through $col-count {
+  @for $i from 0 through $col-count {
     @media (min-width: 768px) {
       .col-sm-#{$i} {
         box-sizing: border-box;
@@ -109,7 +109,7 @@ $col-count: 12;
       }
     }
   }
-  @for $i from 1 through $col-count {
+  @for $i from 0 through $col-count {
     @media (min-width: 992px) {
       .col-md-#{$i} {
         box-sizing: border-box;

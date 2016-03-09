@@ -48,6 +48,15 @@
     display: table;
     clear: both; }
   @media (max-width: 768px) {
+    .row .col-xs-0 {
+      box-sizing: border-box;
+      float: left;
+      display: block;
+      width: 0%;
+      min-height: 1px; }
+    .row .col-xs-offset-0 {
+      margin-left: 0%; } }
+  @media (max-width: 768px) {
     .row .col-xs-1 {
       box-sizing: border-box;
       float: left;
@@ -156,6 +165,15 @@
     .row .col-xs-offset-12 {
       margin-left: 100%; } }
   @media (min-width: 768px) {
+    .row .col-sm-0 {
+      box-sizing: border-box;
+      float: left;
+      display: block;
+      width: 0%;
+      min-height: 1px; }
+    .row .col-sm-offset-0 {
+      margin-left: 0%; } }
+  @media (min-width: 768px) {
     .row .col-sm-1 {
       box-sizing: border-box;
       float: left;
@@ -263,6 +281,15 @@
       min-height: 1px; }
     .row .col-sm-offset-12 {
       margin-left: 100%; } }
+  @media (min-width: 992px) {
+    .row .col-md-0 {
+      box-sizing: border-box;
+      float: left;
+      display: block;
+      width: 0%;
+      min-height: 1px; }
+    .row .col-md-offset-0 {
+      margin-left: 0%; } }
   @media (min-width: 992px) {
     .row .col-md-1 {
       box-sizing: border-box;
