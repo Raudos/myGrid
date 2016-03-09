@@ -82,7 +82,11 @@ $col-count: 12;
         min-height: 1px;
       }
       .col-xs-offset-#{$i} {
-        margin-left: 100% / $col-count * $i;
+        @if $i == 0 {
+          margin-left: 0%;
+        } @else {
+          margin-left: 100% / $col-count * $i;
+        }
       }
     }
   }
@@ -97,7 +101,11 @@ $col-count: 12;
         min-height: 1px;
       }
       .col-sm-offset-#{$i} {
-        margin-left: 100% / $col-count * $i;
+        @if $i == 0 {
+          margin-left: 0%;
+        } @else {
+          margin-left: 100% / $col-count * $i;
+        }
       }
     }
   }
@@ -112,11 +120,15 @@ $col-count: 12;
         min-height: 1px;
       }
       .col-md-offset-#{$i} {
-        margin-left: 100% / $col-count * $i;
+        @if $i == 0 {
+          margin-left: 0%;
+        } @else {
+          margin-left: 100% / $col-count * $i;
+        }
       }
     }
   }
-  @for $i from 1 through $col-count {
+  @for $i from 0 through $col-count {
     @media (min-width: 1200px) {
       .col-lg-#{$i} {
         box-sizing: border-box;
@@ -127,7 +139,11 @@ $col-count: 12;
         min-height: 1px;
       }
       .col-lg-offset-#{$i} {
-        margin-left: 100% / $col-count * $i;
+        @if $i == 0 {
+          margin-left: 0%;
+        } @else {
+          margin-left: 100% / $col-count * $i;
+        }
       }
     }
   }

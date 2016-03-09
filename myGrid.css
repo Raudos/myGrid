@@ -372,6 +372,15 @@
     .row .col-md-offset-12 {
       margin-left: 100%; } }
   @media (min-width: 1200px) {
+    .row .col-lg-0 {
+      box-sizing: border-box;
+      float: left;
+      display: block;
+      width: 0%;
+      min-height: 1px; }
+    .row .col-lg-offset-0 {
+      margin-left: 0%; } }
+  @media (min-width: 1200px) {
     .row .col-lg-1 {
       box-sizing: border-box;
       float: left;
