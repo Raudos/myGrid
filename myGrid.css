@@ -20,7 +20,8 @@
 .table {
   display: table !important;
   table-layout: fixed !important;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .cell {
   vertical-align: middle;
