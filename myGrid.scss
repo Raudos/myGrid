@@ -24,23 +24,10 @@ $col-count: 12;
 
 //Kontener ze zmienną szerokością
 .container-fluid {
-  max-width: 1500px;
   margin: auto;
 }
 .container {
   margin: auto;
-}
-.table {
-    display: table !important;
-    table-layout: fixed !important;
-    height:100%;
-    width: 100%;
-}
-.cell {
-    vertical-align: middle;
-    float: none !important;
-    display: table-cell !important;
-    height:100%;
 }
 @media (max-width: 767px) {
   .hidden-xs {
@@ -147,5 +134,17 @@ $col-count: 12;
         }
       }
     }
+  }
+}
+.table {
+  display: table !important;
+  table-layout: fixed !important;
+  height:100%;
+  width: 100%;
+  .cell {
+    vertical-align: middle;
+    float: none;
+    display: table-cell;
+    height:100%;
   }
 }
